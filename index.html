@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PBL Presentation | 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+        body { background-color: #020617; color: #f8fafc; font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(90deg, #60a5fa, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        #timerContainer { background: #ffffff; color: #020617; box-shadow: 0 10px 40px rgba(0,0,0,0.8); border: 3px solid #3b82f6; z-index: 1000; }
+    </style>
+</head>
+<body onload="startTimer()">
+
+<div id="timerContainer" class="fixed bottom-10 right-10 px-8 py-4 rounded-3xl flex items-center gap-4 transition-all">
+    <i class="fas fa-hourglass-start text-blue-600 text-2xl"></i>
+    <span id="displayTime" class="text-4xl font-black font-mono tracking-tighter">00:00</span>
+</div>
+
+<nav class="fixed w-full z-50 glass border-b border-slate-800/50 px-8 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-4">
+        <div class="bg-white p-1 rounded flex items-center justify-center shadow-md" style="height: 48px; width: 48px;">
+            <img src="mujlogo.jpg" alt="MUJ" class="h-full w-auto object-contain" onerror="this.src='https://via.placeholder.com/50?text=MUJ'">
+        </div>
+        <div class="flex flex-col text-left">
+            <span class="text-xl font-black text-white leading-none uppercase tracking-tighter">
+                PBL <span class="text-blue-500 italic">2026</span>
+            </span>
+            <span class="text-[9px] text-slate-400 font-bold uppercase tracking-widest mt-1">
+                Dept. of Computer Science & Engineering
+            </span>
+        </div>
+    </div>
+</nav>
+
+<main class="max-w-6xl mx-auto px-6 pt-48 pb-32 space-y-32">
+
+<!-- TITLE -->
+<section class="text-center">
+    <div class="inline-block px-4 py-1 border border-slate-800 rounded-full text-slate-500 text-[10px] font-mono mb-6 uppercase tracking-widest">
+        ID: 23FEXXXXX
+    </div>
+
+    <h1 class="text-6xl md:text-7xl font-extrabold mb-8 uppercase leading-tight">
+        <span class="gradient-text">Process Digital Twin for Business Process Monitoring</span>
+    </h1>
+
+    <p class="text-slate-400 max-w-3xl mx-auto italic text-lg leading-relaxed border-l-2 border-blue-500/30 pl-6 text-left">
+        To design and implement a Process Digital Twin prototype that reconstructs and analyzes business process execution over time using structured event-log data (case_id, activity, timestamp), inspired by Celonis-style process mining.
+    </p>
+</section>
+
+<!-- PROBLEM -->
+<section class="grid md:grid-cols-2 gap-12 items-stretch">
+
+<div class="glass p-10 rounded-[2.5rem] border-l-4 border-blue-600">
+    <h2 class="text-3xl font-extrabold mb-6">Problem Statement</h2>
+    <p class="text-slate-400 leading-relaxed text-justify">
+        Organizations execute thousands of process instances daily (e.g., order-to-delivery).
+        However, raw system logs do not provide insight into process delays, bottlenecks,
+        incomplete executions, or variant behavior.
+        A Process Digital Twin is required to reconstruct real-time process state
+        and generate analytical summaries for monitoring and improvement.
+    </p>
+</div>
+
+<div class="space-y-6">
+    <div class="glass p-7 rounded-3xl border-r-4 border-blue-500/50">
+        <h3 class="text-blue-400 font-bold text-xs uppercase tracking-widest mb-2">
+            Literature Review
+        </h3>
+        <p class="text-sm text-slate-500 italic">
+            Process Mining has emerged as a powerful data-driven technique for discovering,
+monitoring, and improving real-world processes using event logs. Tools such as
+Celonis demonstrate how structured logs (case_id, activity, timestamp) can be
+transformed into process models, performance analytics, and bottleneck detection.
+
+The concept of Digital Twins has traditionally been applied to physical systems
+in manufacturing and IoT environments, where sensor data is used to replicate
+the real-time behavior of machines or assets.
+
+Recent academic work suggests extending the Digital Twin paradigm beyond
+physical systems toward business processes. However, most implementations
+either focus on predictive machine learning models or static dashboards.
+
+There exists a need for a structured, explainable Process Digital Twin
+prototype that reconstructs process evolution at the case level and
+provides interpretable analytics such as completion rates,
+delay detection, and variant analysis.
+
+        </p>
+    </div>
+
+    <div class="glass p-7 rounded-3xl border-r-4 border-purple-500/50">
+        <h3 class="text-purple-400 font-bold text-xs uppercase tracking-widest mb-2">
+            Research Gap
+        </h3>
+        <p class="text-sm text-slate-500 italic">
+            This project adapts the Digital Twin concept to business process
+            systems using event-log reconstruction and case-level state modeling.
+        </p>
+    </div>
+</div>
+
+</section>
+
+<!-- METHODOLOGY -->
+<section class="space-y-12">
+<h2 class="text-4xl font-black text-center uppercase tracking-tight">
+System <span class="text-blue-500">Methodology</span>
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="glass p-8 rounded-3xl text-center">
+    <i class="fas fa-database text-blue-500 text-3xl mb-4"></i>
+    <h3 class="font-bold mb-2 uppercase text-xs tracking-widest">Dataset</h3>
+    <p class="text-sm text-slate-500">
+        Synthetic event-log dataset (200+ cases).<br>
+        Features: variability, delays, incomplete cases,
+        bottleneck simulation.
+    </p>
+</div>
+
+<div class="glass p-8 rounded-3xl text-center">
+    <i class="fas fa-microchip text-purple-500 text-3xl mb-4"></i>
+    <h3 class="font-bold mb-2 uppercase text-xs tracking-widest">Digital Twin Logic</h3>
+    <p class="text-sm text-slate-500">
+        Case-wise reconstruction.<br>
+        Duration calculation.<br>
+        Delay detection (>24 hrs).<br>
+        Variant analysis.
+    </p>
+</div>
+
+<div class="glass p-8 rounded-3xl text-center border-2 border-green-500/20 bg-green-500/5">
+    <i class="fab fa-python text-green-500 text-3xl mb-4"></i>
+    <h3 class="font-bold mb-4 uppercase text-xs tracking-widest text-green-400">
+        Live Code
+    </h3>
+    <a href="https://github.com/GauranshSingh/process-digital-twin-pbl2"
+       target="_blank"
+       class="px-6 py-2 bg-green-600 rounded-full text-[10px] font-black hover:bg-green-500 transition">
+        VIEW REPOSITORY
+    </a>
+</div>
+
+</div>
+</section>
+
+<!-- RESULTS -->
+<section class="glass p-12 rounded-[3.5rem] border-t-4 border-blue-500">
+<h2 class="text-3xl font-black mb-12 text-center uppercase tracking-tight">
+Results & <span class="text-blue-500">Analysis</span>
+</h2>
+
+<div class="grid md:grid-cols-2 gap-16 items-center">
+
+<div class="h-80">
+<canvas id="resultsChart"></canvas>
+</div>
+
+<div class="space-y-6">
+<div class="p-6 rounded-2xl bg-white/5 flex justify-between items-center border border-white/10">
+    <span class="text-slate-400 font-bold uppercase text-xs tracking-widest">
+        Process Coverage
+    </span>
+    <span class="text-blue-400 font-mono font-black text-3xl">
+        100%
+    </span>
+</div>
+
+<p class="text-slate-500 text-sm italic text-justify leading-relaxed">
+Successfully reconstructed 200+ process instances.
+Detected delayed cases, incomplete flows,
+and identified top execution variants.
+Demonstrates effective Process Digital Twin modeling.
+</p>
+
+</div>
+</div>
+</section>
+
+<!-- TEAM -->
+<section class="text-center pt-10 border-t border-slate-900">
+<h2 class="text-[10px] font-black text-slate-600 uppercase tracking-[0.5em] mb-12">
+Academic Credits
+</h2>
+
+<div class="flex flex-wrap justify-center gap-10">
+
+<div class="glass px-12 py-8 rounded-[2rem] border-b-4 border-blue-600">
+    <p class="text-[9px] font-bold text-blue-500 mb-2 uppercase tracking-widest">
+        Project Guide
+    </p>
+    <p class="font-black text-xl text-slate-100">
+        Dr. Neha Chowdhary
+    </p>
+</div>
+
+<div class="glass px-12 py-8 rounded-[2rem] border-b-4 border-slate-700">
+    <p class="text-[9px] font-bold text-slate-400 mb-2 uppercase tracking-widest">
+        Student
+    </p>
+    <p class="font-black text-xl text-slate-100">
+        Gauransh Singh
+    </p>
+    <p class="text-[10px] text-slate-500 mt-1">
+        23FEXXXXX
+    </p>
+</div>
+
+</div>
+</section>
+
+</main>
+
+<footer class="py-12 text-center bg-black/40 border-t border-slate-900">
+<p class="text-slate-600 text-[10px] font-bold tracking-[0.3em] uppercase mb-2">
+Manipal University Jaipur
+</p>
+<p class="text-slate-500 text-[9px] font-medium tracking-[0.2em] uppercase opacity-50">
+Department of Computer Science & Engineering • 2026
+</p>
+</footer>
+
+<script>
+let sec = 0;
+function startTimer(){
+setInterval(()=>{
+sec++;
+let m=Math.floor(sec/60);
+let s=sec%60;
+document.getElementById('displayTime').innerText=
+`${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`;
+},1000);
+}
+
+const ctx = document.getElementById('resultsChart').getContext('2d');
+new Chart(ctx,{
+type:'bar',
+data:{
+labels:['Total Cases','Completed','Delayed'],
+datasets:[{
+data:[200,170,120],
+backgroundColor:['#1e293b','#3b82f6','#ef4444'],
+borderRadius:15
+}]
+},
+options:{
+responsive:true,
+maintainAspectRatio:false,
+plugins:{legend:{display:false}},
+scales:{
+y:{beginAtZero:true},
+x:{grid:{display:false}}
+}
+}
+});
+</script>
+
+</body>
+</html>
