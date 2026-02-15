@@ -1,0 +1,175 @@
+Case ID,Current Activity,Total Duration (hrs),Completed,Delayed (>24 hrs),Variant
+ORD_0002,Order Delivered,24.0,True,False,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0003,Order Created,0.0,False,False,Order Created
+ORD_0004,Invoice Generated,10.0,False,False,Order Created -> Invoice Generated
+ORD_0005,Order Delivered,34.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0006,Order Delivered,29.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0007,Order Delivered,33.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0008,Payment Received,7.0,False,False,Order Created -> Invoice Generated -> Payment Received
+ORD_0009,Order Delivered,27.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0010,Order Delivered,42.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0013,Order Delivered,29.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0014,Order Delivered,79.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0015,Order Delivered,17.0,True,False,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0016,Order Created,0.0,False,False,Order Created
+ORD_0017,Order Created,0.0,False,False,Order Created
+ORD_0018,Order Packed,20.0,False,False,Order Created -> Invoice Generated -> Payment Received -> Order Packed
+ORD_0019,Order Shipped,32.0,False,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped
+ORD_0020,Order Delivered,32.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0021,Order Delivered,46.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0022,Order Delivered,37.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0023,Order Packed,20.0,False,False,Order Created -> Invoice Generated -> Payment Received -> Order Packed
+ORD_0025,Order Shipped,40.0,False,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped
+ORD_0026,Order Shipped,31.0,False,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped
+ORD_0027,Order Created,0.0,False,False,Order Created
+ORD_0028,Order Delivered,46.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0029,Invoice Generated,9.0,False,False,Order Created -> Invoice Generated
+ORD_0030,Order Created,0.0,False,False,Order Created
+ORD_0031,Order Packed,30.0,False,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed
+ORD_0032,Order Delivered,18.0,True,False,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0033,Order Delivered,37.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0034,Order Delivered,32.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0035,Order Delivered,43.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0036,Order Delivered,36.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0037,Order Created,0.0,False,False,Order Created
+ORD_0038,Order Delivered,60.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0039,Order Delivered,40.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0042,Order Delivered,28.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0043,Payment Received,11.0,False,False,Order Created -> Invoice Generated -> Payment Received
+ORD_0044,Invoice Generated,6.0,False,False,Order Created -> Invoice Generated
+ORD_0045,Invoice Generated,2.0,False,False,Order Created -> Invoice Generated
+ORD_0046,Order Delivered,33.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0047,Order Delivered,38.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0048,Order Packed,27.0,False,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed
+ORD_0050,Invoice Generated,1.0,False,False,Order Created -> Invoice Generated
+ORD_0051,Order Shipped,22.0,False,False,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped
+ORD_0052,Order Shipped,33.0,False,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped
+ORD_0053,Order Packed,11.0,False,False,Order Created -> Invoice Generated -> Payment Received -> Order Packed
+ORD_0054,Order Packed,13.0,False,False,Order Created -> Invoice Generated -> Payment Received -> Order Packed
+ORD_0056,Order Created,0.0,False,False,Order Created
+ORD_0057,Order Delivered,82.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0058,Order Created,0.0,False,False,Order Created
+ORD_0059,Order Delivered,82.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0060,Order Delivered,32.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0061,Payment Received,18.0,False,False,Order Created -> Invoice Generated -> Payment Received
+ORD_0062,Order Delivered,39.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0063,Order Delivered,34.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0064,Order Delivered,54.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0065,Order Delivered,29.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0066,Order Delivered,34.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0067,Invoice Generated,10.0,False,False,Order Created -> Invoice Generated
+ORD_0068,Order Delivered,32.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0069,Invoice Generated,11.0,False,False,Order Created -> Invoice Generated
+ORD_0070,Invoice Generated,9.0,False,False,Order Created -> Invoice Generated
+ORD_0071,Invoice Generated,7.0,False,False,Order Created -> Invoice Generated
+ORD_0072,Order Delivered,30.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0073,Order Shipped,19.0,False,False,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped
+ORD_0074,Order Delivered,31.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0076,Order Shipped,73.0,False,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped
+ORD_0077,Order Delivered,47.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0078,Order Created,0.0,False,False,Order Created
+ORD_0079,Order Delivered,57.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0080,Order Delivered,41.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0081,Order Packed,19.0,False,False,Order Created -> Invoice Generated -> Payment Received -> Order Packed
+ORD_0082,Payment Received,7.0,False,False,Order Created -> Invoice Generated -> Payment Received
+ORD_0083,Order Created,0.0,False,False,Order Created
+ORD_0084,Order Shipped,23.0,False,False,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped
+ORD_0086,Order Created,0.0,False,False,Order Created
+ORD_0087,Invoice Generated,9.0,False,False,Order Created -> Invoice Generated
+ORD_0088,Order Created,0.0,False,False,Order Created
+ORD_0090,Order Created,0.0,False,False,Order Created
+ORD_0091,Order Delivered,41.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0092,Payment Received,8.0,False,False,Order Created -> Invoice Generated -> Payment Received
+ORD_0093,Order Delivered,48.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0094,Order Delivered,30.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0095,Invoice Generated,9.0,False,False,Order Created -> Invoice Generated
+ORD_0096,Order Delivered,51.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0097,Order Created,0.0,False,False,Order Created
+ORD_0099,Payment Received,15.0,False,False,Order Created -> Invoice Generated -> Payment Received
+ORD_0101,Order Created,0.0,False,False,Order Created
+ORD_0102,Order Delivered,78.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0103,Order Delivered,71.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0104,Payment Received,11.0,False,False,Order Created -> Invoice Generated -> Payment Received
+ORD_0105,Order Delivered,34.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0106,Invoice Generated,9.0,False,False,Order Created -> Invoice Generated
+ORD_0107,Order Delivered,50.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0108,Invoice Generated,10.0,False,False,Order Created -> Invoice Generated
+ORD_0109,Payment Received,10.0,False,False,Order Created -> Invoice Generated -> Payment Received
+ORD_0110,Order Packed,28.0,False,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed
+ORD_0112,Order Created,0.0,False,False,Order Created
+ORD_0113,Order Delivered,31.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0114,Invoice Generated,2.0,False,False,Order Created -> Invoice Generated
+ORD_0115,Order Delivered,66.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0118,Order Delivered,44.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0119,Payment Received,15.0,False,False,Order Created -> Invoice Generated -> Payment Received
+ORD_0120,Order Delivered,39.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0121,Invoice Generated,2.0,False,False,Order Created -> Invoice Generated
+ORD_0122,Order Shipped,30.0,False,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped
+ORD_0124,Order Delivered,39.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0125,Order Delivered,29.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0126,Payment Received,11.0,False,False,Order Created -> Invoice Generated -> Payment Received
+ORD_0127,Order Delivered,39.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0128,Order Delivered,37.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0130,Invoice Generated,3.0,False,False,Order Created -> Invoice Generated
+ORD_0132,Order Delivered,76.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0133,Payment Received,20.0,False,False,Order Created -> Invoice Generated -> Payment Received
+ORD_0134,Order Delivered,27.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0135,Order Delivered,46.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0137,Invoice Generated,4.0,False,False,Order Created -> Invoice Generated
+ORD_0138,Order Delivered,44.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0139,Order Delivered,35.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0140,Order Delivered,55.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0142,Order Packed,26.0,False,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed
+ORD_0143,Order Delivered,37.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0144,Order Delivered,38.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0145,Order Delivered,87.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0146,Invoice Generated,6.0,False,False,Order Created -> Invoice Generated
+ORD_0148,Order Delivered,76.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0149,Order Delivered,24.0,True,False,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0150,Payment Received,22.0,False,False,Order Created -> Invoice Generated -> Payment Received
+ORD_0151,Order Delivered,27.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0152,Order Delivered,54.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0153,Order Delivered,39.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0154,Order Delivered,25.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0155,Order Delivered,42.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0156,Order Created,0.0,False,False,Order Created
+ORD_0157,Order Delivered,75.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0158,Payment Received,13.0,False,False,Order Created -> Invoice Generated -> Payment Received
+ORD_0160,Order Delivered,72.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0161,Invoice Generated,5.0,False,False,Order Created -> Invoice Generated
+ORD_0162,Order Delivered,38.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0163,Invoice Generated,7.0,False,False,Order Created -> Invoice Generated
+ORD_0165,Order Delivered,30.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0166,Order Delivered,27.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0167,Order Shipped,49.0,False,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped
+ORD_0168,Order Delivered,33.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0169,Order Delivered,30.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0170,Order Delivered,31.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0171,Invoice Generated,1.0,False,False,Order Created -> Invoice Generated
+ORD_0172,Order Delivered,37.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0173,Order Shipped,25.0,False,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped
+ORD_0174,Payment Received,5.0,False,False,Order Created -> Invoice Generated -> Payment Received
+ORD_0175,Order Created,0.0,False,False,Order Created
+ORD_0176,Order Packed,9.0,False,False,Order Created -> Invoice Generated -> Payment Received -> Order Packed
+ORD_0177,Order Delivered,41.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0178,Payment Received,18.0,False,False,Order Created -> Invoice Generated -> Payment Received
+ORD_0180,Order Delivered,62.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0181,Order Shipped,28.0,False,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped
+ORD_0182,Order Packed,25.0,False,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed
+ORD_0183,Order Packed,25.0,False,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed
+ORD_0184,Order Delivered,37.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0185,Order Delivered,46.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0186,Invoice Generated,6.0,False,False,Order Created -> Invoice Generated
+ORD_0187,Order Delivered,31.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0188,Invoice Generated,8.0,False,False,Order Created -> Invoice Generated
+ORD_0189,Order Delivered,62.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0190,Invoice Generated,2.0,False,False,Order Created -> Invoice Generated
+ORD_0191,Payment Received,19.0,False,False,Order Created -> Invoice Generated -> Payment Received
+ORD_0192,Payment Received,13.0,False,False,Order Created -> Invoice Generated -> Payment Received
+ORD_0193,Order Packed,26.0,False,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed
+ORD_0194,Order Delivered,56.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0195,Order Packed,22.0,False,False,Order Created -> Invoice Generated -> Payment Received -> Order Packed
+ORD_0196,Invoice Generated,2.0,False,False,Order Created -> Invoice Generated
+ORD_0197,Order Delivered,31.0,True,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped -> Order Delivered
+ORD_0198,Order Shipped,35.0,False,True,Order Created -> Invoice Generated -> Payment Received -> Order Packed -> Order Shipped
+ORD_0200,Payment Received,21.0,False,False,Order Created -> Invoice Generated -> Payment Received
