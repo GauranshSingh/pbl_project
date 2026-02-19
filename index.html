@@ -3,172 +3,218 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PBL Presentation | 2026</title>
-
+<title>Process Digital Twin | PBL 2026</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 <style>
-body { background-color: #020617; color: #f8fafc; font-family: Arial, sans-serif; }
-.glass { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
-.gradient-text { background: linear-gradient(90deg,#60a5fa,#a855f7); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+body { background-color:#020617; color:#f8fafc; font-family:'Plus Jakarta Sans',sans-serif; scroll-behavior:smooth; }
+.glass { background:rgba(255,255,255,0.03); backdrop-filter:blur(15px); border:1px solid rgba(255,255,255,0.1); }
+.gradient-text { background:linear-gradient(90deg,#60a5fa,#a855f7); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+#timerContainer { background:#ffffff; color:#020617; box-shadow:0 10px 40px rgba(0,0,0,0.8); border:3px solid #3b82f6; z-index:1000; }
 </style>
 </head>
 
-<body>
+<body onload="startTimer()">
 
-<main class="max-w-6xl mx-auto px-6 py-20 space-y-24">
+<div id="timerContainer" class="fixed bottom-10 right-10 px-8 py-4 rounded-3xl flex items-center gap-4">
+<i class="fas fa-hourglass-start text-blue-600 text-2xl"></i>
+<span id="displayTime" class="text-4xl font-black font-mono">00:00</span>
+</div>
+
+<nav class="fixed w-full z-50 glass border-b border-slate-800/50 px-8 py-4 flex justify-between items-center">
+<div class="flex items-center gap-4">
+<div class="bg-white p-1 rounded flex items-center justify-center shadow-md" style="height:48px;width:48px;">
+<img src="mujlogo.jpg" alt="MUJ" class="h-full w-auto object-contain">
+</div>
+<div>
+<span class="text-xl font-black uppercase">PBL <span class="text-blue-500 italic">2026</span></span>
+<p class="text-[9px] text-slate-400 uppercase tracking-widest">Dept. of Computer Science & Engineering</p>
+</div>
+</div>
+</nav>
+
+<main class="max-w-6xl mx-auto px-6 pt-48 pb-32 space-y-32">
 
 <!-- TITLE -->
 <section class="text-center">
-<div class="inline-block px-4 py-1 border border-slate-700 rounded-full text-slate-400 text-xs mb-6">
+<div class="inline-block px-4 py-1 border border-slate-800 rounded-full text-slate-500 text-[10px] font-mono mb-6 uppercase">
 ID: 2430030012
 </div>
 
-<h1 class="text-5xl font-extrabold mb-6 uppercase">
-<span class="gradient-text">Process Digital Twin Prototype</span>
+<h1 class="text-6xl md:text-7xl font-extrabold mb-8 uppercase">
+<span class="gradient-text">Process Digital Twin for Event Log Analytics</span>
 </h1>
 
-<p class="text-slate-400 max-w-3xl mx-auto text-lg leading-relaxed">
-Design and implementation of a Process Digital Twin framework that reconstructs
-business process execution using structured event-log data and performs
-case-level lifecycle analytics including delay detection, completion tracking,
-and variant analysis.
+<p class="text-slate-400 max-w-3xl mx-auto italic text-lg leading-relaxed border-l-2 border-blue-500/30 pl-6 text-left">
+To design and implement a structured Process Digital Twin framework capable of reconstructing and analyzing business process lifecycle using event-log data (case_id, activity, timestamp).
 </p>
 </section>
-
 
 <!-- PROBLEM -->
 <section class="grid md:grid-cols-2 gap-12">
 
-<div class="glass p-8 rounded-xl">
-<h2 class="text-2xl font-bold mb-4">Problem Statement</h2>
+<div class="glass p-10 rounded-[2.5rem] border-l-4 border-blue-600">
+<h2 class="text-3xl font-extrabold mb-6">Problem Statement</h2>
 <p class="text-slate-400 text-justify leading-relaxed">
-Modern enterprise systems generate large volumes of event logs, but these logs
-do not directly provide insight into process bottlenecks, execution delays,
-or incomplete workflows. It is important to acknowledge that most current
-analytical approaches rely on static data views and do not capture the
-dynamic evolution of processes over time. A structured Process Digital Twin
-is required to reconstruct real-time process states and provide interpretable
-process intelligence.
+Modern enterprise systems generate large volumes of event logs; however, these logs do not directly provide structured insight into process duration, incomplete cases, execution delays, or dominant workflow patterns. Static storage of event records lacks case-level lifecycle visibility.
+This project develops a Process Digital Twin prototype that reconstructs complete process instances from raw event logs and generates analytical insights using rule-based lifecycle computation.
 </p>
 </div>
 
-<div class="glass p-8 rounded-xl">
-<h3 class="text-xl font-semibold mb-4">Literature Review</h3>
-<p class="text-slate-400 text-justify leading-relaxed">
-Process Mining techniques enable the discovery and monitoring of business
-processes using event-log data (case_id, activity, timestamp).
-Commercial tools such as Celonis demonstrate process visualization and
-variant analysis capabilities. However, many existing implementations rely
-on static dashboards and lack structured case-level state reconstruction.
+<div class="space-y-6">
 
-Recent research highlights the importance of moving from static analysis
-towards temporally-aware Digital Twin frameworks capable of representing
-process evolution over time. This project contributes by implementing an
-explainable Process Digital Twin prototype that reconstructs case lifecycles
-and generates actionable process analytics.
+<div class="glass p-7 rounded-3xl border-r-4 border-blue-500/50">
+<h3 class="text-blue-400 font-bold text-xs uppercase tracking-widest mb-2">
+Literature Review
+</h3>
+
+<p class="text-sm text-slate-400 text-justify leading-relaxed">
+Process Mining techniques utilize structured event-log data to discover, monitor, and improve business workflows. 
+Existing digital twin frameworks in industrial systems emphasize predictive modeling and simulation, but many implementations lack transparent case-level lifecycle reconstruction.
+
+This project focuses on deterministic event-log processing using Python-based analytics to reconstruct process states, compute execution duration, detect delays (>24 hours), and identify dominant execution variants.
 </p>
 </div>
 
+<div class="glass p-7 rounded-3xl border-r-4 border-purple-500/50">
+<h3 class="text-purple-400 font-bold text-xs uppercase tracking-widest mb-2">
+Research Gap
+</h3>
+<p class="text-sm text-slate-400 italic">
+Most existing systems emphasize predictive modeling; however, structured lifecycle reconstruction and explainable process-state analytics remain under-explored in academic prototypes. This project establishes a transparent and interpretable Process Digital Twin foundation.
+</p>
+</div>
+
+</div>
 </section>
 
-
 <!-- METHODOLOGY -->
-<section class="space-y-10">
-
-<h2 class="text-3xl font-bold text-center">System Methodology</h2>
+<section class="space-y-12">
+<h2 class="text-4xl font-black text-center uppercase">
+System <span class="text-blue-500">Methodology</span>
+</h2>
 
 <div class="grid md:grid-cols-3 gap-8">
 
-<div class="glass p-6 rounded-xl text-center">
-<h3 class="font-semibold mb-2">Dataset</h3>
-<p class="text-slate-400 text-sm">
-Synthetic structured event log<br>
+<div class="glass p-8 rounded-3xl text-center">
+<i class="fas fa-database text-blue-500 text-3xl mb-4"></i>
+<h3 class="font-bold text-xs uppercase">Dataset</h3>
+<p class="text-sm text-slate-400">
 ~750 event records<br>
 ~170 unique process cases<br>
-Simulated variability, bottlenecks, incomplete flows
+Synthetic structured event log<br>
+Controlled variability & delays
 </p>
 </div>
 
-<div class="glass p-6 rounded-xl text-center">
-<h3 class="font-semibold mb-2">Digital Twin Logic</h3>
-<p class="text-slate-400 text-sm">
+<div class="glass p-8 rounded-3xl text-center">
+<i class="fas fa-project-diagram text-purple-500 text-3xl mb-4"></i>
+<h3 class="font-bold text-xs uppercase">Digital Twin Logic</h3>
+<p class="text-sm text-slate-400">
 Case-wise grouping<br>
-Lifecycle reconstruction<br>
+Timestamp sorting<br>
 Duration computation<br>
 Delay detection (>24 hrs)<br>
-Variant identification
+Variant reconstruction
 </p>
 </div>
 
-<div class="glass p-6 rounded-xl text-center">
-<h3 class="font-semibold mb-2">Implementation</h3>
-<p class="text-slate-400 text-sm">
-Python (Pandas)<br>
-Event-log processing<br>
-Rule-based analytics engine<br>
-GitHub-hosted prototype
-</p>
+<div class="glass p-8 rounded-3xl text-center border-2 border-green-500/20 bg-green-500/5">
+<i class="fab fa-github text-green-500 text-3xl mb-4"></i>
+<h3 class="font-bold text-xs uppercase text-green-400">Repository</h3>
+<a href="https://github.com/GauranshSingh/process-digital-twin-pbl2"
+target="_blank"
+class="px-6 py-2 bg-green-600 rounded-full text-[10px] font-black hover:bg-green-500 transition">
+VIEW GITHUB
+</a>
 </div>
 
 </div>
 </section>
-
 
 <!-- RESULTS -->
-<section class="glass p-10 rounded-xl">
+<section class="glass p-12 rounded-[3.5rem] border-t-4 border-blue-500">
+<h2 class="text-3xl font-black mb-12 text-center uppercase">
+Results & <span class="text-blue-500">Analysis</span>
+</h2>
 
-<h2 class="text-2xl font-bold mb-8 text-center">Results & Analysis</h2>
+<div class="grid md:grid-cols-2 gap-16 items-center">
 
-<div class="grid md:grid-cols-2 gap-10 items-center">
-
-<div class="h-72">
-<canvas id="chart"></canvas>
+<div class="h-80">
+<canvas id="resultsChart"></canvas>
 </div>
 
-<div class="text-slate-400 leading-relaxed text-justify">
-The system successfully reconstructed approximately 170 process cases
-from ~750 event records. Delay detection identified cases exceeding
-24 hours of total execution time. Variant analysis revealed dominant
-execution patterns as well as incomplete and partial process flows.
-
-This demonstrates the feasibility of a Process Digital Twin
-framework for structured business process monitoring.
+<div>
+<p class="text-slate-400 text-sm leading-relaxed text-justify">
+The system reconstructed approximately 170 distinct process cases from around 750 event records.
+Rule-based analytics identified delayed cases exceeding 24 hours and detected dominant execution variants.
+This validates the feasibility of a structured Process Digital Twin for business workflow monitoring.
+</p>
 </div>
 
 </div>
-
 </section>
 
-
 <!-- TEAM -->
-<section class="text-center">
+<section class="text-center pt-10 border-t border-slate-900">
+<h2 class="text-[10px] font-black text-slate-600 uppercase tracking-[0.5em] mb-12">
+Academic Credits
+</h2>
 
-<h2 class="text-xl font-semibold mb-6">Academic Credits</h2>
+<div class="flex justify-center gap-10">
 
-<p class="text-slate-400">Project Guide: Dr. Neha Chowdhary</p>
-<p class="text-slate-400">Student: Gauransh Singh</p>
-<p class="text-slate-400">Registration No: 2430030012</p>
+<div class="glass px-12 py-8 rounded-[2rem] border-b-4 border-blue-600">
+<p class="text-[9px] font-bold text-blue-500 uppercase">Project Guide</p>
+<p class="font-black text-xl">Dr. Neha Chowdhary</p>
+</div>
 
+<div class="glass px-12 py-8 rounded-[2rem] border-b-4 border-slate-700">
+<p class="text-[9px] font-bold text-slate-400 uppercase">Student</p>
+<p class="font-black text-xl">Gauransh Singh</p>
+<p class="text-[10px] text-slate-500">2430030012</p>
+</div>
+
+</div>
 </section>
 
 </main>
 
+<footer class="py-12 text-center bg-black/40 border-t border-slate-900">
+<p class="text-slate-600 text-[10px] uppercase">Manipal University Jaipur</p>
+<p class="text-slate-500 text-[9px] uppercase opacity-50">
+Department of Computer Science & Engineering • 2026
+</p>
+</footer>
 
 <script>
-const ctx = document.getElementById('chart').getContext('2d');
+let sec=0;
+function startTimer(){
+setInterval(()=>{
+sec++;
+let m=Math.floor(sec/60);
+let s=sec%60;
+document.getElementById('displayTime').innerText=
+`${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`;
+},1000);
+}
+
+const ctx=document.getElementById('resultsChart').getContext('2d');
 new Chart(ctx,{
 type:'bar',
 data:{
 labels:['Total Events','Total Cases','Delayed Cases'],
 datasets:[{
 data:[750,170,120],
-backgroundColor:['#3b82f6','#8b5cf6','#ef4444']
+backgroundColor:['#3b82f6','#8b5cf6','#ef4444'],
+borderRadius:15
 }]
 },
 options:{
 responsive:true,
+maintainAspectRatio:false,
 plugins:{legend:{display:false}},
 scales:{y:{beginAtZero:true}}
 }
